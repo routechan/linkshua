@@ -4,7 +4,7 @@ import GroupTop from "@/features/group/components/GroupTop";
 import LinkLists from "@/features/group/components/LinkList";
 import { LinkData } from "@/features/group/types/types";
 
-export default async function groupPage({params}:{params:{id:string}}){
+export default async function groupPage({params}:any){
     const groupId = params.id
     const linkData:LinkData | undefined | null = await fetchLinkData(groupId)
     if (!linkData) {

@@ -1,6 +1,6 @@
 import AddLinkForm from "@/features/group/add/components/AddLinkForm";
 
-export default async function addLinkPage({params}:{params:{id:string}}){
+export default async function addLinkPage({params}:any){
     const groupId = params.id
  
 return(
