@@ -33,7 +33,7 @@ const EditGroupForm = ({ linkData,groupId }: { linkData: LinkData,groupId:string
             name='group-name'
             type='text'
             placeholder='ベトナム旅行用リンク集'
-            className='w-full border border-gray-400  rounded-md p-2'
+            className='w-full border border-gray-400  rounded-md p-2 text-gray-900'
           />
            {state?.errors?.title && <p className="text-red-500">{state.errors.title[0]}</p>}
         </div>
@@ -47,7 +47,7 @@ const EditGroupForm = ({ linkData,groupId }: { linkData: LinkData,groupId:string
             id='description'
             name='description'
             placeholder='ベトナム旅行で行きたい場所や役に立ちそうなサイトを集めてください'
-            className='w-full border border-gray-400 rounded-md p-2'
+            className='w-full border border-gray-400 rounded-md p-2 text-gray-900'
           />
            {state?.errors?.description && <p className="text-red-500">{state.errors.description[0]}</p>}
         </div>

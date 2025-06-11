@@ -43,5 +43,5 @@ try{
     console.error(error);
     return
 }
-redirect(`/group`)
+redirect(`/group/${response.groupId}`)
 }

@@ -28,7 +28,7 @@ const CreateGroup = () => {
             value={groupName}
             type='text'
             placeholder='ベトナム旅行用リンク集'
-            className='w-full border border-gray-400  rounded-md p-2'
+            className='w-full border border-gray-400 text-gray-900 rounded-md p-2'
           />
            {state?.errors?.title && <p className="text-red-500">{state.errors.title[0]}</p>}
         </div>
@@ -41,7 +41,7 @@ const CreateGroup = () => {
             id='description'
             name='description'
             placeholder='ベトナム旅行で行きたい場所や役に立ちそうなサイトを集めてください'
-            className='w-full border border-gray-400 rounded-md p-2'
+            className='w-full border border-gray-400 rounded-md p-2 text-gray-900'
           />
            {state?.errors?.description && <p className="text-red-500">{state.errors.description[0]}</p>}
         </div>

@@ -13,7 +13,7 @@ const Usage = () => {
     {usages.map((usage)=>(
 
 <li className='border border-gray-500 p-5 rounded-md'>
-<h3 className=' font-semibold'>{usage.id}.{usage.title}</h3>
+<h3 className=' font-semibold text-gray-500'>{usage.id}.{usage.title}</h3>
 <img src={`/usage/${usage.image}`}/>
 <p className='text-gray-500 text-sm mt-2'>{usage.description}</p>
 </li>

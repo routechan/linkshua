@@ -43,12 +43,12 @@ const EditModal = ({ id, isOpen, closeModal }: Props) => {
         >
           <div
             ref={modalRef}
-            className='bg-white rounded-lg shadow-md py-2 px-4 flex flex-col gap-1'
+            className='bg-white rounded-lg shadow-md py-2 px-4 flex flex-col gap-2'
           >
-            <Link href={`/group/${id}/link/edit`} className='text-xs text-gray-500'>
+            <Link href={`/group/${id}/link/edit`} className='text-sm text-gray-500'>
               編集
             </Link>
-            <button onClick={() => deleteLink(id)} className='text-xs text-red-500'>
+            <button onClick={() => deleteLink(id)} className='text-sm text-red-500'>
               削除
             </button>
           </div>
