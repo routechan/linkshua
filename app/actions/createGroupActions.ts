@@ -36,7 +36,6 @@ export async function createGroup(formData: FormData){
     groupId = group.id
     }
     catch(error){
-        console.error(error)
         return
     }
     redirect(`/group/${groupId}`)

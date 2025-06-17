@@ -40,7 +40,6 @@ try{
     })
 
 }catch(error){
-    console.error(error);
     return
 }
 redirect(`/group/${response.groupId}`)

@@ -10,7 +10,6 @@ export async function fetchLinkData(groupId:string){
     return linkData
 
 }catch(error){
-    console.error(error)
     return
 }
     
@@ -23,7 +22,6 @@ export async function deleteLink(id:string){
     })
     revalidatePath(`/`)
 }catch(error){
-    console.error(error)
     return
 }
 }
@@ -35,7 +33,6 @@ try{
  })
  return link
 }catch(error){
-    console.error(error)
     return
 }
 }

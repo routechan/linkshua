@@ -30,7 +30,6 @@ const AddLinkForm = ({ groupId }: Props) => {
           const data = await res.json();
           if (data.title) setPreviewTitle(data.title);
         } catch (error) {
-          console.error(error);
         }
       };
       fetchUrlTitle();

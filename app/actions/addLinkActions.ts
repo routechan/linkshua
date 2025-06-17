@@ -41,7 +41,6 @@ const response = await prisma.link.create({
     }
 })
     }catch(error){
-        console.error(error)
         return
     }
     redirect(`/group/${groupId}`)

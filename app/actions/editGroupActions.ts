@@ -36,7 +36,6 @@ description
     })
 
 }catch(error){
-    console.error(error);
     return
 }
 redirect(`/group/${groupId}`)
