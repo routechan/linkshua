@@ -36,7 +36,7 @@ const EditLinkForm = ({link,id}:Props) => {
           type='text'
           value={url}
           placeholder='https://example.com'
-          className='w-full border border-gray-400  rounded-md p-2'
+          className='w-full border border-gray-400  rounded-md p-2 text-gray-900'
         />
  {state?.errors?.url && <p className="text-red-500">{state.errors.url[0]}</p>}
 
@@ -52,7 +52,7 @@ const EditLinkForm = ({link,id}:Props) => {
           value={name || previewTitle}
           type='text'
           placeholder='参考記事'
-          className='w-full border border-gray-400 rounded-md p-2'
+          className='w-full border border-gray-400 rounded-md p-2 text-gray-900'
         />
         {state?.errors?.name && <p className="text-red-500">{state.errors.name[0]}</p>}
       </div>
@@ -66,7 +66,7 @@ const EditLinkForm = ({link,id}:Props) => {
           id='memo'
           name='memo'
           placeholder='このURLに関する説明などを記入'
-          className='w-full border border-gray-400 rounded-md p-2'
+          className='w-full border border-gray-400 rounded-md p-2 text-gray-900'
         />
 
       </div>

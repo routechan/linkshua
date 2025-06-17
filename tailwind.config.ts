@@ -16,6 +16,7 @@ export default {
         sub:"#122A46",
       },
     },
+   
   },
   plugins: [],
 } satisfies Config;
