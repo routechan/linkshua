@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "リンクシュア | みんなでリンク集を作れるツール",
-  description: "リンク集を複数人で管理できるツール。旅行で行きたい場所やご飯屋さんのサイトを友達と集めて管理するのに役立ちます。",
+  description: "リンク集を複数人で作成できるツール。旅行で行きたい場所やご飯屋さんのサイトを友達と集めて管理するのに役立ちます。",
   openGraph: {
-    title: "リンク集を共同で管理しよう",
+    title: "リンク集を共同で作成しよう",
     description: "このURLからサイトに行くと共同でリンク集を管理できます。",
     images: [
       {
-        url: "https://example.com/ogp.png", // フルURLである必要あり
+        url: "/ogp.png",
         width: 1200,
         height: 630,
         alt: "リンクシュア",
@@ -30,7 +30,13 @@ export const metadata: Metadata = {
     ],
     locale: "ja_JP",
     type: "website",
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "リンク集を共同で作成しよう",
+    description: "このURLからサイトに行くと共同でリンク集を管理できます。",
+    images: ["/ogp.png"],
+  },
 };
 
 export default function RootLayout({
