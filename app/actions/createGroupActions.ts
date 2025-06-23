@@ -19,14 +19,13 @@ export async function createGroup(formData: FormData){
         const parseResult = groupSchema.safeParse(raw);
     
         if (!parseResult.success) {
-          const errors = parseResult.error.flatten().fieldErrors;
-          return { message: "入力内容に誤りがあります", errors };
+        const errors = parseResult.error.flatten().fieldErrors;
+        return { message: "入力内容に誤りがあります", errors };
         }
-      
         const { title, description, } = parseResult.data;
 
     try{
-  const group = await prisma.linkGroup.create({
+const group = await prisma.linkGroup.create({
             data: {
                 title,
                 description: description || undefined
